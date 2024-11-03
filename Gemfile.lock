@@ -8,6 +8,7 @@ GEM
       database_cleaner-core (~> 2.0.0)
       sequel
     diff-lcs (1.5.1)
+    mini_portile2 (2.8.7)
     rake (13.2.1)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -24,28 +25,12 @@ GEM
     rspec-support (3.13.1)
     sequel (5.86.0)
       bigdecimal
-    sqlite3 (2.2.0-aarch64-linux-gnu)
-    sqlite3 (2.2.0-aarch64-linux-musl)
-    sqlite3 (2.2.0-arm-linux-gnu)
-    sqlite3 (2.2.0-arm-linux-musl)
-    sqlite3 (2.2.0-arm64-darwin)
-    sqlite3 (2.2.0-x86-linux-gnu)
-    sqlite3 (2.2.0-x86-linux-musl)
-    sqlite3 (2.2.0-x86_64-darwin)
-    sqlite3 (2.2.0-x86_64-linux-gnu)
-    sqlite3 (2.2.0-x86_64-linux-musl)
+    sqlite3 (1.6.9)
+      mini_portile2 (~> 2.8.0)
 
 PLATFORMS
-  aarch64-linux-gnu
-  aarch64-linux-musl
-  arm-linux-gnu
-  arm-linux-musl
-  arm64-darwin
-  x86-linux-gnu
-  x86-linux-musl
-  x86_64-darwin
-  x86_64-linux-gnu
-  x86_64-linux-musl
+  ruby
+  x86_64-linux
 
 DEPENDENCIES
   bcrypt
@@ -53,7 +38,7 @@ DEPENDENCIES
   rake
   rspec
   sequel
-  sqlite3
+  sqlite3 (~> 1.6.9)
 
 BUNDLED WITH
    2.5.16
