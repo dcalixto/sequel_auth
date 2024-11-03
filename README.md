@@ -4,8 +4,8 @@ A simple, secure authentication gem for Sinatra and Roda applications using Sequ
 Provides user authentication with email/username login, secure password handling, and customizable views.
 
 [![Build Status](https://app.travis-ci.com/dcalixto/sequel_auth.svg?token=eZ8xZn3yqKudZ5sNxRYM&branch=master)](https://app.travis-ci.com/dcalixto/sequel_auth)
-[![Maintainability](https://api.codeclimate.com/v1/badges/4d4576d7f8674d5e16c9/maintainability)](https://codeclimate.com/github/dcalixto/sequel_auth/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/4d4576d7f8674d5e16c9/test_coverage)](https://codeclimate.com/github/dcalixto/sequel_auth/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b9109f665afed8a96d4e/maintainability)](https://codeclimate.com/github/dcalixto/sequel_auth/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/b9109f665afed8a96d4e/test_coverage)](https://codeclimate.com/github/dcalixto/sequel_auth/test_coverage)
 
 ## Security Features
 

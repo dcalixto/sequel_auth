@@ -1,7 +1,8 @@
 require 'bundler/setup'
 require 'sequel'
 require 'database_cleaner/sequel'
-
+require 'simplecov'
+SimpleCov.start
 # Configure test database
 DB = Sequel.connect('sqlite://test.db')
 Sequel::Model.db = DB

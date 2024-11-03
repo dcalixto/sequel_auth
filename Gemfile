@@ -9,3 +9,7 @@ group :development, :test do
   gem 'rake'
   gem 'rspec'
 end
+group :test do
+  gem 'codeclimate-test-reporter'
+  gem 'simplecov'
+end

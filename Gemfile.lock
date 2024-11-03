@@ -3,11 +3,14 @@ GEM
   specs:
     bcrypt (3.1.20)
     bigdecimal (3.1.8)
+    codeclimate-test-reporter (1.0.7)
+      simplecov
     database_cleaner-core (2.0.1)
     database_cleaner-sequel (2.0.2)
       database_cleaner-core (~> 2.0.0)
       sequel
     diff-lcs (1.5.1)
+    docile (1.4.1)
     mini_portile2 (2.8.7)
     rake (13.2.1)
     rspec (3.13.0)
@@ -25,6 +28,12 @@ GEM
     rspec-support (3.13.1)
     sequel (5.86.0)
       bigdecimal
+    simplecov (0.22.0)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.13.1)
+    simplecov_json_formatter (0.1.4)
     sqlite3 (1.6.9)
       mini_portile2 (~> 2.8.0)
 
@@ -35,10 +44,12 @@ PLATFORMS
 DEPENDENCIES
   bcrypt
   bigdecimal
+  codeclimate-test-reporter
   database_cleaner-sequel
   rake
   rspec
   sequel
+  simplecov
   sqlite3 (~> 1.6.9)
 
 BUNDLED WITH
