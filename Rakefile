@@ -1,11 +1,14 @@
 require 'rake'
-require 'rspec/core/rake_task'
+require 'sequel'
+require 'logger'
+require 'yaml'
+require 'bundler/setup'
+Bundler.require
 
-# Import the sequel_auth tasks
-import 'lib/sequel_auth/tasks/install.rake'
-
-# Define RSpec task
-RSpec::Core::RakeTask.new(:spec)
-
-# Set default task to run specs
-task default: :spec
+namespace :db do
+  desc 'Run migrations'
+  task :migrate do
+    Sequel.extension :migration
+    Sequel::Migrator.run(DB, 'db/migrations')
+  end
+end
