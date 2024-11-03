@@ -34,6 +34,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt
+  bigdecimal
   database_cleaner-sequel
   rake
   rspec
