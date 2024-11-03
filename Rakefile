@@ -1,6 +1,11 @@
-# Rakefile
-require 'bundler/gem_tasks'
 require 'rake'
+require 'rspec/core/rake_task'
 
-# Load all rake tasks from lib/tasks
-Dir.glob('lib/sequel_auth/tasks/**/*.rake').each { |r| load r }
+# Import the sequel_auth tasks
+import 'lib/sequel_auth/tasks/install.rake'
+
+# Define RSpec task
+RSpec::Core::RakeTask.new(:spec)
+
+# Set default task to run specs
+task default: :spec
