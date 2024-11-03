@@ -1,0 +1,13 @@
+example_id                        | status | run_time        |
+--------------------------------- | ------ | --------------- |
+./spec/sequel_auth_spec.rb[1:1:1] | passed | 0.57775 seconds |
+./spec/sequel_auth_spec.rb[1:1:2] | passed | 1.11 seconds    |
+./spec/sequel_auth_spec.rb[1:1:3] | passed | 1.12 seconds    |
+./spec/sequel_auth_spec.rb[1:2:1] | passed | 0.02223 seconds |
+./spec/sequel_auth_spec.rb[1:2:2] | passed | 0.00222 seconds |
+./spec/sequel_auth_spec.rb[1:2:3] | passed | 0.55934 seconds |
+./spec/sequel_auth_spec.rb[1:3:1] | passed | 1.15 seconds    |
+./spec/sequel_auth_spec.rb[1:3:2] | passed | 2.21 seconds    |
+./spec/sequel_auth_spec.rb[1:3:3] | passed | 2.8 seconds     |
+./spec/sequel_auth_spec.rb[1:4:1] | passed | 0.58479 seconds |
+./spec/sequel_auth_spec.rb[1:4:2] | passed | 1.6 seconds     |

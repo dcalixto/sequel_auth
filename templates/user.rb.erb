@@ -1,0 +1,17 @@
+# User model template
+class User < Sequel::Model
+  include BCrypt
+
+  def password=(new_password)
+    self.password_digest = Password.create(new_password)
+  end
+
+  def password
+    Password.new(self.password_digest)
+  end
+
+  def self.authenticate(email, password)
+    user = User.where(email: email).first
+    user if user && user.password == password
+  end
+end
