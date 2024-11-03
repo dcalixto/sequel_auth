@@ -1,4 +1,4 @@
-# SequelAuth
+# Sequel Auth
 
 A simple, secure authentication gem for Sinatra and Roda applications using Sequel ORM.
 Provides user authentication with email/username login, secure password handling, and customizable views.
